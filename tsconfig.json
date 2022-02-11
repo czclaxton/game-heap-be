@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "es2018",
+    "module": "commonjs",
+    "lib": ["es2020"],
+    "outDir": "build",
+    "rootDir": "src",
+    "strict": true,
+    "noImplicitAny": false,
+    "baseUrl": "./",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "paths": {
+      "controllers/*": ["src/controllers/*"],
+      "types/*": ["src/types/*"],
+      "models/*": ["src/models/*"],
+      "helpers/*": ["src/helpers/*"],
+      "middleware/*": ["src/middleware/*"],
+      "*": ["node_modules/*"]
+    }
+  },
+  "exclude": ["tests"]
+}
